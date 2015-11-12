@@ -1,7 +1,7 @@
 introduction
 ============
 odML is a metadata framework which was first introduced by `Grewe et al. 2011 
-<http://journal.frontiersin.org/article/10.3389/fninf.2011.00016/abstract>`_ as
+<http://journal.frontiersin.org/article/10.3389/fninf.2011.00016/abstract>`_ 1_ as
 a `G-Node project <http://www.g-node.org/projects/odml>`_ and is also openly 
 available on `GitHub <https://github.com/G-Node/python-odml>`_.
 odML was developed to hierarchically organize and save metadata into a human 
@@ -18,5 +18,5 @@ display the corresponding metadata in an easy readable overview table.
 In this documentation you will find a summary of the available functions and a 
 tutorial which explains you how to use the odmlviz module.
 
-.. Grewe J, Wachtler T and Benda J (2011) A bottom-up approach to data 
+.. 1_ Grewe J, Wachtler T and Benda J (2011) A bottom-up approach to data 
    annotation in neurophysiology. Front. Neuroinform. 5:16
