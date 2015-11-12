@@ -9,26 +9,68 @@ odMLviz Tutorial
 	Creative Commons Attribution-ShareAlike 4.0 International 
 	`License <http://creativecommons.org/licenses/by-sa/4.0/>`_
 
-In general there are two different kinds of tables you can create yet: a table with an overview of your whole odML or a table comparing different sections of the odML due to their properties. How they exactly look like will be shown later. But you should know, that only the first table can be converted back to an odML-file.
+In general there are two different kinds of tables you can create yet: a table 
+with an overview of your whole odML or a table comparing different sections of 
+the odML due to their properties. How they exactly look like will be shown 
+later. But you should know, that only the first table can be converted back to 
+an odML-file.
 
 odML-table
 ***********
 
-This table is basically just a flat version of the odML-file. Every row of the table represents a value of the odML (as you will see later, that does not mean you have to print every value) and gives all available information about this value. Those are:
+This table is basically just a flat version of the odML-file. Every row of the 
+table represents a value of the odML (as you will see later, that does not mean 
+you have to print every value) and gives all available information about this 
+value. Those are:
 
-* **Path** The Path to the Section next to the Value. Every Value belongs to exactly one Property, and every Property to exactly one Section. So, by giving the Path to the Section you automatically get the Path to the Value by adding the Name of the Property and the Value. This must be in the table, if you want to convert it back to an odML-file, otherwise it will be impossible to recreate the hierarchic structure of the odML.
-* **SectionName** The Name of the Section next to the Value. This one is optional, as the name of the Section is already given in the Path.
-* **SectionDefinition** The Definition of the Section next to the Value. This is an optional attribute in odML, so it is also optional in the table.
-* **SectionType** The type of the Section.
-* **PropertyName** The Name of the Property the Value belongs to. This one is not optional, if you want to convert the table back to an odML.
-* **PropertyDefinition** The Definition of the Property. 
-* **Value** The metadata-Value itself. A Property without Values cannot exist, so this has to be in the table to create an odML from it.
-* **ValueDefinition** The definition of the Value (optional).
-* **DataUnit** The Unit of the Value (optional).
-* **DataUncertainty** The uncertainty of the Value (optional).
-* **odmlDatatype** The odML data Type of the Value. This is important, because it might be different from the datatype in Python or Excel. This one must be given in the table if you want to convert it back to odML.
+**Path**: 
+	The Path to the Section next to the Value. Every Value belongs to exactly 
+	one Property, and every Property to exactly one Section. So, by giving the 
+	Path to the Section you automatically get the Path to the Value by adding 
+	the Name of the Property and the Value. This must be in the table, if you 
+	want to convert it back to an odML-file, otherwise it will be impossible 
+	to recreate the hierarchic structure of the odML.
+	
+**SectionName**:
+	The Name of the Section next to the Value. This one is optional, as the 
+	name of the Section is already given in the Path.
+	
+**SectionDefinition**: 
+	The Definition of the Section next to the Value. This is an optional 
+	attribute in odML, so it is also optional in the table.
+	
+**SectionType**: 
+	The type of the Section.
+	
+**PropertyName**: 
+	The Name of the Property the Value belongs to. This one is not optional, if 
+	you want to convert the table back to an odML.
+	
+**PropertyDefinition**: 
+	The Definition of the Property. 
+	
+**Value**: 
+	The metadata-Value itself. A Property without Values cannot exist, so this 
+	has to be in the table to create an odML from it.
+	
+**ValueDefinition**: 
+	The definition of the Value (optional).
+	
+**DataUnit**: 
+	The Unit of the Value (optional).
+	
+**DataUncertainty**: 
+	The uncertainty of the Value (optional).
+	
+**odmlDatatype**: 
+	The odML data Type of the Value. This is important, because it might be 
+	different from the datatype in Python or Excel. This one must be given in 
+	the table if you want to convert it back to odML.
 
-Those are many options, and in most cases you dont need all those information. The default columns of an odML-Table are 'Path', 'Property Name', 'Value' and 'odML Data Type', as those are the information needed to create an odML from the information in the table.
+Those are many options, and in most cases you dont need all those information. 
+The default columns of an odML-Table are 'Path', 'Property Name', 'Value' and 
+'odML Data Type', as those are the information needed to create an odML from 
+the information in the table.
 
 
 
