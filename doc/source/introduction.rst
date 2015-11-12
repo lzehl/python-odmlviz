@@ -18,5 +18,5 @@ display the corresponding metadata in an easy readable overview table.
 In this documentation you will find a summary of the available functions and a 
 tutorial which explains you how to use the odmlviz module.
 
-.. 1_ Grewe J, Wachtler T and Benda J (2011) A bottom-up approach to data 
+.. _1: Grewe J, Wachtler T and Benda J (2011) A bottom-up approach to data 
    annotation in neurophysiology. Front. Neuroinform. 5:16
