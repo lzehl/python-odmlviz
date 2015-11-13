@@ -3,10 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to odmlviz's documentation!
-===================================
+Welcome to the documentation of odMLviz!
+========================================
 
-In this documentation you will find everything you need to know for working with odmlviz. 
+In this documentation you will find everything you need to know for working 
+with odmlviz. 
 
 Contents:
 *********

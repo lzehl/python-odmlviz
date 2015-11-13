@@ -1,5 +1,5 @@
 
-code documentation
+Code documentation
 ==================
 
 Here you find a detailed documentation of the code.

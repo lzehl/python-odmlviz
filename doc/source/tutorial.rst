@@ -9,19 +9,20 @@ odMLviz Tutorial
 	Creative Commons Attribution-ShareAlike 4.0 International 
 	`License <http://creativecommons.org/licenses/by-sa/4.0/>`_
 
-In general there are two different kinds of tables you can create yet: a table 
-with an overview of your whole odML or a table comparing different sections of 
-the odML due to their properties. How they exactly look like will be shown 
-later. But you should know, that only the first table can be converted back to 
-an odML-file.
+We provide routines for two formats (csv and xls) which can be use to create 
+and save a flat table representation of a complete odML file and the other way
+around. Additionally, we provide routines which only create and save a table 
+containing repeating sections within an odML file. How the routines are used 
+and how the corresponding tables look like will be described in the following.
 
 odML-table
 ***********
 
-This table is basically just a flat version of the odML-file. Every row of the 
-table represents a value of the odML (as you will see later, that does not mean 
-you have to print every value) and gives all available information about this 
-value. Those are:
+In the flat representation of an odML file as a table every row of the 
+represents an odML Value. The row contains not only the data of the odML Value,
+but provides also all available information on the corresponding odML Propery 
+and Section. In total the table contains in each row the following mendatory 
+and optional information of an odML Value:
 
 **Path**: 
 	The Path to the Section next to the Value. Every Value belongs to exactly 
