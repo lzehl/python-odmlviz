@@ -220,9 +220,10 @@ class OdmlXlsTable(OdmlTable):
                 #special style for datetime-objects
 
                 if isinstance(cell_content, datetime.datetime):
-                    style.num_format_str = "DD-MM-YYYY HH:MM:SS"
+                    style.num_format_str = "YYYY-MM-DD HH:MM:SS"
                 elif isinstance(cell_content, datetime.date):
-                    style.num_format_str = "DD-MM-YYYY"
+                    print cell_content, type(cell_content)
+                    style.num_format_str = "YYYY-MM-DD"
                 elif isinstance(cell_content, datetime.time):
                     style.num_format_str = "HH:MM:SS"
                 else:

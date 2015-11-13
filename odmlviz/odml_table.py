@@ -209,17 +209,18 @@ class OdmlTable(object):
                         value = int(value)
                     current_dic['Value'] = str(value)
                 elif dtype == 'datetime':
-                    value = xlrd.xldate_as_tuple(value, 0)
-                    current_dic['Value'] = datetime.datetime(value)
+                    value = xlrd.xldate_as_tuple(value, workbook.datemode)
+                    current_dic['Value'] = datetime.datetime(*value)
                 elif dtype == 'time':
-                    value = xlrd.xldate_as_tuple(value, 0)
-                    current_dic['Value'] = datetime.time(value[3:])
+                    value = xlrd.xldate_as_tuple(value, workbook.datemode)
+                    current_dic['Value'] = datetime.time(*value[3:])
                 elif dtype == 'date':
-                    value = xlrd.xldate_as_tuple(value, 0)
-                    current_dic['Value'] = datetime.date(value[:3])
-                elif dtype in ['string', 'text', 'person']:
+                    value = xlrd.xldate_as_tuple(value, workbook.datemode)
+                    current_dic['Value'] = datetime.date(*value[:3])
+                elif dtype in ['string', 'text', 'person', 'url']:
                     current_dic['Value'] = str(current_dic['Value'])
                 else:
+                    print value
                     raise Exception('unknown datatype!!')
                     # TODO: change exception?!
 
